@@ -1,4 +1,4 @@
-q g;okimport 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import '../theme.dart';
 
 class MonitoringPage extends StatelessWidget {
