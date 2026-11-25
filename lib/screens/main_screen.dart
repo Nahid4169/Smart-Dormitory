@@ -9,6 +9,7 @@ import '../pages/rooms_page.dart';
 import '../pages/payments_page.dart';
 import '../pages/maintenance_page.dart';
 import '../pages/monitoring_page.dart';
+import '../pages/safety_sensors_page.dart';
 
 class MainScreen extends StatefulWidget {
   final Future<void> Function() onLogout;
@@ -48,6 +49,7 @@ class _MainScreenState extends State<MainScreen> {
     'Payments',
     'Maintenance',
     'Monitoring',
+    'Safety',
   ];
 
   final pageIcons = [
@@ -57,6 +59,7 @@ class _MainScreenState extends State<MainScreen> {
     Icons.account_balance_wallet_rounded,
     Icons.build_rounded,
     Icons.sensors_rounded,
+    Icons.local_fire_department_rounded,
   ];
 
   final firstNames = [
@@ -615,6 +618,7 @@ class _MainScreenState extends State<MainScreen> {
         onUpdateStatus: (r, v) => setState(() => r.status = v),
       ),
       const MonitoringPage(),
+      const SafetySensorsPage(),
     ];
 
     return Scaffold(
